@@ -7,6 +7,6 @@ foreach ($_FILES["images"]["error"] as $key => $error) {
   }
 }
 
-echo "<h2>Successfully Uploaded Images</h2>";
+
 
 ?>
