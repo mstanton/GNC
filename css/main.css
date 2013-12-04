@@ -1,38 +1,13 @@
-  @font-face {
-    font-family: 'DINRoundProRegular';
-    src: url('../assets/fonts/dinroundpro-webfont.eot');
-    src: local('Ã¢ËœÂº'),
-         url('../assets/fonts/dinroundpro-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/dinroundpro-webfont.woff') format('woff'),
-         url('../assets/fonts/dinroundpro-webfont.ttf') format('truetype'),
-         url('../assets/fonts/dinroundpro-webfont.svg#DINRoundProRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'DINRoundProBold';
-    src: url('../assets/fonts/dinroundpro-bold-webfont.eot');
-    src: local('Ã¢ËœÂº'),
-         url('../assets/fonts/dinroundpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/dinroundpro-bold-webfont.woff') format('woff'),
-         url('../assets/fonts/dinroundpro-bold-webfont.ttf') format('truetype'),
-         url('../assets/fonts/dinroundpro-bold-webfont.svg#DINRoundProBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'DINRoundProMedium';
-    src: url('../assets/fonts/dinroundpro-medium-webfont.eot');
-    src: local('Ã¢ËœÂº'),
-         url('../assets/fonts/dinroundpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/dinroundpro-medium-webfont.woff') format('woff'),
-         url('../assets/fonts/dinroundpro-medium-webfont.ttf') format('truetype'),
-         url('../assets/fonts/dinroundpro-medium-webfont.svg#DINRoundProMedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
+.jcroppy img {
+    max-width: 500px;
+    max-height: 500px;
 }
 
+
 ::-webkit-file-upload-button {
+    width:199px; height:41px; background:url('../assets/images/btn_choose_img.png'); border:none;
+}
+::-moz-file-upload-button {
     width:199px; height:41px; background:url('../assets/images/btn_choose_img.png'); border:none;
 }
 
