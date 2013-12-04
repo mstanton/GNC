@@ -63,6 +63,7 @@
         <input type="text" id="h"  class="hidden_input" name="size_h"/>
 
         <div class="next_prev_container">
+            <img src="assets/images/lbl_pos_txt.png" id="lblColorImage" width="217" height="18"/>
             <button class="previous"></button>
             <button id="crop" class="next"></button>
         </div>
@@ -93,6 +94,7 @@
         </div>
         <canvas id="canvasThumbResult" width="380" height="380"></canvas>
         <div class="next_prev_container">
+            <img src="assets/images/lbl_color_image.png" id="lblColorImage" width="160" height="17"/>
             <button class="previous"></button>
             <button class="next"></button>
         </div>

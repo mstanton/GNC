@@ -25,13 +25,16 @@ canvas { }
 .nav_icons {  list-style:none; position:absolute; right:0px; top:16px;  }
 .nav_icons li { display:inline; margin:0 50px 0 0;}
 
-.next_prev_container { width:536px; position:absolute; top:545px; left:55px; }
+.next_prev_container { width:536px; position:absolute; top:545px; left:55px; text-align: center; }
 .next_prev_container .previous { position:absolute; left:0; }
 .next_prev_container .next { position:absolute; right:0; }
 
+
+#lblColorImage { margin:12px 0 0 0; }
+
 #canvasThumbResult { position:absolute; left:130px; top:120px; border:4px solid #000; }
 
-.jcroppy { margin:20px auto 0 auto; }
+.jcroppy { position:absolute; top:120px; left:135px;  }
 
 .color_tools_container { position:absolute; z-index:100; top:445px; left:200px; }
 #colorTools { list-style-type:none;  }
