@@ -4,7 +4,7 @@
 	    $name = $_FILES["images"]["name"][$key];
 	    move_uploaded_file( $_FILES["images"]["tmp_name"][$key], "../../assets/uploads/" . $_FILES['images']['name'][$key]);
 
-	    echo $name;
+	    echo "/GNC/assets/uploads/".$name;
 	  }
 	}
 ?>

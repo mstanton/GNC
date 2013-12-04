@@ -41,12 +41,12 @@
 <div id="step2" class="crop container"> <!-- style="display:block; left:0px; " -->
     <!-- Crop and save image -->
     <div class="box">
-       <div id="response"></div>
-       <ul id="image-list">  
+         
         <div class="jcroppy">
-            <img id="canvasToThumb" class='thumbnail-img' src=""/>
+            <img id="canvasToThumb" class='thumbnail-img' width="500" src=""/> 
         </div>
-        <button id="crop">Crop</button>
+        
+        
         <input type="text" id="x"  name="coord_x" />
         <input type="text" id="y"  name="coord_y" />
         <input type="text" id="x2" name="coord_x2"/>
@@ -54,9 +54,12 @@
         <input type="text" id="w"  name="size_w"/>
         <input type="text" id="h"  name="size_h"/>
 
-        <canvas id="canvasThumbResult" width="500" height="500"></canvas>
         <button class="previous"></button>
-        <button class="next"></button>
+        <button id="crop" class="next"></button>
+        
+        <div id="response"></div>
+       <ul id="image-list"/>
+
     </div>
 </div>
 
@@ -74,7 +77,7 @@
                 <li><img src="assets/images/rad_yellow_off.png" width="32" height="32" alt="YELLOW"/></li>
             </ul>
         </div>
-        <!--<canvas id="canvasThumbResult" width="320" height="320"></canvas>-->
+        <canvas id="canvasThumbResult" width="500" height="500"></canvas>
         <button class="previous"></button>
         <button class="next"></button>
     </div>
