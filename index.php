@@ -41,23 +41,33 @@
 <div id="step2" class="crop container"> <!-- style="display:block; left:0px; " -->
     <!-- Crop and save image -->
     <div class="box">
-         
+        <ul class="nav_icons">
+            <li><img src="assets/images/icon_upload_off.png" width="28" height="28" alt="STEP ONE"/></li>
+            <li><img src="assets/images/icon_edit_on.png" width="31" height="27" alt="STEP TWO"/></li>
+            <li><img src="assets/images/icon_share_off.png" width="31" height="27" alt="STEP THREE"/></li>
+        </ul> 
         <div class="jcroppy">
             <img id="canvasToThumb" class='thumbnail-img' width="" height="" src=""/> 
         </div>
-        
-        
-        <input type="text" id="x"  name="coord_x" />
-        <input type="text" id="y"  name="coord_y" />
-        <input type="text" id="x2" name="coord_x2"/>
-        <input type="text" id="y2" name="coord_y2"/>
-        <input type="text" id="w"  name="size_w"/>
-        <input type="text" id="h"  name="size_h"/>
 
-        <button class="previous"></button>
-        <button id="crop" class="next"></button>
+        <div class="lbl_crop">
+
+        </div>
         
-        <div id="response"></div>
+        
+        <input type="text" id="x"  class="hidden_input" name="coord_x" />
+        <input type="text" id="y"  class="hidden_input" name="coord_y" />
+        <input type="text" id="x2" class="hidden_input" name="coord_x2"/>
+        <input type="text" id="y2" class="hidden_input" name="coord_y2"/>
+        <input type="text" id="w"  class="hidden_input" name="size_w"/>
+        <input type="text" id="h"  class="hidden_input" name="size_h"/>
+
+        <div class="next_prev_container">
+            <button class="previous"></button>
+            <button id="crop" class="next"></button>
+        </div>
+        
+        
         <ul id="image-list"/>
 
     </div>
@@ -66,20 +76,26 @@
 <div id="step3" class="filter container">
     <!-- Loads cropped image as black and white with image overlay options -->
     <div class="box">
-        <h3>STEP 3</h3>
+        <ul class="nav_icons">
+            <li><img src="assets/images/icon_upload_off.png" width="28" height="28" alt="STEP ONE"/></li>
+            <li><img src="assets/images/icon_edit_on.png" width="31" height="27" alt="STEP TWO"/></li>
+            <li><img src="assets/images/icon_share_off.png" width="31" height="27" alt="STEP THREE"/></li>
+        </ul>
         <div class="color_tools_container">
             <ul id="colorTools">
-                <li><img src="assets/images/rad_orange_on.png" width="32" height="32" alt="ORANGE"/></li>
-                <li><img src="assets/images/rad_red_off.png" width="32" height="32" alt="RED"/></li>
-                <li><img src="assets/images/rad_purple_off.png" width="32" height="32" alt="PURPLE"/></li>
-                <li><img src="assets/images/rad_blue_off.png" width="32" height="32" alt="BLUE"/></li>
-                <li><img src="assets/images/rad_green_off.png" width="32" height="32" alt="GREEN"/></li>
-                <li><img src="assets/images/rad_yellow_off.png" width="32" height="32" alt="YELLOW"/></li>
+                <li><img src="assets/images/rad_orange_on.png" id="btnOrange" width="32" height="32" alt="ORANGE"/></li>
+                <li><img src="assets/images/rad_red_off.png" id="btnRed" width="32" height="32" alt="RED"/></li>
+                <li><img src="assets/images/rad_purple_off.png" id="btnPurple" width="32" height="32" alt="PURPLE"/></li>
+                <li><img src="assets/images/rad_blue_off.png" id="btnBlue" width="32" height="32" alt="BLUE"/></li>
+                <li><img src="assets/images/rad_green_off.png" id="btnGreen" width="32" height="32" alt="GREEN"/></li>
+                <li><img src="assets/images/rad_yellow_off.png" id="btnYellow" width="32" height="32" alt="YELLOW"/></li>
             </ul>
         </div>
-        <canvas id="canvasThumbResult" width="500" height="500"></canvas>
-        <button class="previous"></button>
-        <button class="next"></button>
+        <canvas id="canvasThumbResult" width="380" height="380"></canvas>
+        <div class="next_prev_container">
+            <button class="previous"></button>
+            <button class="next"></button>
+        </div>
     </div>
 </div>
 
