@@ -4,7 +4,13 @@
 	    $name = $_FILES["images"]["name"][$key];
 	    move_uploaded_file( $_FILES["images"]["tmp_name"][$key], "../../assets/uploads/" . $_FILES['images']['name'][$key]);
 
-	    echo "/GNC/assets/uploads/".$name;
+	    $url = "http://localhost:8888/GNC/assets/uploads/".$name;
+
+	    list($width, $height, $type, $attr) = getimagesize($url);
+
+	    $response = array('url'=>$url, 'width'=>$width, 'height'=>$height);
+
+	    echo json_encode($response);
 	  }
 	}
 ?>

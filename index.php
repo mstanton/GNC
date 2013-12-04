@@ -43,7 +43,7 @@
     <div class="box">
          
         <div class="jcroppy">
-            <img id="canvasToThumb" class='thumbnail-img' width="500" src=""/> 
+            <img id="canvasToThumb" class='thumbnail-img' width="" height="" src=""/> 
         </div>
         
         
@@ -58,7 +58,7 @@
         <button id="crop" class="next"></button>
         
         <div id="response"></div>
-       <ul id="image-list"/>
+        <ul id="image-list"/>
 
     </div>
 </div>
