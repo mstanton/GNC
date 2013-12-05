@@ -4,7 +4,7 @@
     <title>GNC</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="lib/js/jquery-1.8.2.min.js"></script>
     
     <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="css/jquery.jcrop.min.css">
@@ -60,12 +60,12 @@
 
         <div class="next_prev_container">
             <img src="assets/images/lbl_pos_txt.png" id="lblColorImage" width="217" height="18"/>
-            <button class="previous"></button>
+            <button id="prevStepOne" class="previous"></button> <!-- prev step 1 button -->
             <button id="crop" class="next"></button>
         </div>
         
         
-        <ul id="image-list"/>
+        <ul id="image-list"/><!-- need to remove but referenced to a function all weird so it is invisible -->
 
     </div>
 </div>
@@ -91,7 +91,7 @@
         <canvas id="canvasThumbResult" width="380" height="380"></canvas>
         <div class="next_prev_container">
             <img src="assets/images/lbl_color_image.png" id="lblColorImage" width="160" height="17"/>
-            <button class="previous"></button>
+            <button id="prevStepTwo" class="previous"></button> <!-- prev step 2 button -->
             <button id="btnSaveCanvas" class="next"></button>
         </div>
 
@@ -101,10 +101,15 @@
 <div id="step4" class="form container">
     <!-- Text form -->
     <div class="box">
-        <canvas id="txtCanvas" width="380" height="380"></canvas>
-        <div class="form">
-            <input type="text" id="name"/>
-            <textarea id="">How?</textarea>
+        <ul class="nav_icons">
+            <li><img src="assets/images/icon_upload_off.png" width="28" height="28" alt="STEP ONE"/></li>
+            <li><img src="assets/images/icon_edit_on.png" width="31" height="27" alt="STEP TWO"/></li>
+            <li><img src="assets/images/icon_share_off.png" width="31" height="27" alt="STEP THREE"/></li>
+        </ul>
+        <div id="form">
+            <input type="text" id="beatName" value="NAME" width="391" height="61"/>
+            <img src="assets/images/lbl_beat_avg.png" width="391" height="61"/>
+            <textarea id="beatText">HOW?</textarea>
             <button id="btnEnterTxt" class="btn_enter_txt"></button>
         </div>
     </div>
@@ -113,9 +118,10 @@
 <div id="step5" class="text container">
     <!-- Text placement on filtered image -->
     <div class="box">
-        
+        <canvas id="txtCanvas" width="380" height="380"></canvas>
         <div class="next_prev_container">
-            <button class="previous"></button>
+            <img src="assets/images/lbl_pos_txt.png" width="217" height="18"/>
+            <button id="prevStepFour" class="previous"></button>
             <button class="next"></button>
         </div>
     </div>
