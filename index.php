@@ -49,10 +49,6 @@
         <div class="jcroppy">
             <img id="canvasToThumb" class='thumbnail-img' width="" height="" src=""/> 
         </div>
-
-        <div class="lbl_crop">
-
-        </div>
         
         
         <input type="text" id="x"  class="hidden_input" name="coord_x" />
@@ -96,25 +92,32 @@
         <div class="next_prev_container">
             <img src="assets/images/lbl_color_image.png" id="lblColorImage" width="160" height="17"/>
             <button class="previous"></button>
-            <button class="next"></button>
+            <button id="btnSaveCanvas" class="next"></button>
         </div>
+
     </div>
 </div>
 
 <div id="step4" class="form container">
     <!-- Text form -->
     <div class="box">
-        <h3>STEP 4</h3>
-        <button id="btnEnterTxt" class="btn_enter_txt"></button>
+        <canvas id="txtCanvas" width="380" height="380"></canvas>
+        <div class="form">
+            <input type="text" id="name"/>
+            <textarea id="">How?</textarea>
+            <button id="btnEnterTxt" class="btn_enter_txt"></button>
+        </div>
     </div>
 </div>
 
 <div id="step5" class="text container">
     <!-- Text placement on filtered image -->
     <div class="box">
-        <h3>STEP 5</h3>
-        <button class="previous"></button>
-        <button class="next"></button>
+        
+        <div class="next_prev_container">
+            <button class="previous"></button>
+            <button class="next"></button>
+        </div>
     </div>
 </div>
 

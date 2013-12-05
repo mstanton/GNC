@@ -1,6 +1,6 @@
 .jcroppy img {
-    max-width: 640x;
-    max-height: 480px;
+    max-width: 1280px;
+    max-height: 960px;
 }
 
 
@@ -49,6 +49,7 @@ canvas { }
 .next { width:86px; height:41px; background:url('../assets/images/btn_next.png');  border:none; }
 #btnStart { width:199px; height:41px; background:url('../assets/images/btn_start.png'); border:none; position:absolute; top:516px; left:232px;}
 .btnUpload { width:199px; height:41px; background:url('../assets/images/btn_choose_img.png'); border:none; position:absolute; top:333px; left:222px; }
+.btn_enter_txt { width:136px; height:41px; background:url('../assets/images/btn_enter_txt.png'); border:none; }
 
 /* labels */
 .lbl_upload { width:260px; height:49px; background:url('../assets/images/lbl_add_photo.png') no-repeat; position:absolute; top:250px; left:195px; }
