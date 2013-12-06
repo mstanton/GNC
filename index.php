@@ -12,6 +12,7 @@
 
     <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>-->
     <script type="text/javascript" src="lib/js/jquery.jcrop.min.js"></script>
+    <script type="text/javascript" src="lib/js/canvas.txt.extension.js"></script>
     <script type="text/javascript" src="lib/js/load.js"></script>
 </head>
 <body>
@@ -80,7 +81,7 @@
         </ul>
         <div class="color_tools_container">
             <ul id="colorTools">
-                <li><img src="assets/images/rad_orange_on.png" id="btnOrange" width="32" height="32" alt="ORANGE"/></li>
+                <li><img src="assets/images/rad_orange_off.png" id="btnOrange" width="32" height="32" alt="ORANGE"/></li>
                 <li><img src="assets/images/rad_red_off.png" id="btnRed" width="32" height="32" alt="RED"/></li>
                 <li><img src="assets/images/rad_purple_off.png" id="btnPurple" width="32" height="32" alt="PURPLE"/></li>
                 <li><img src="assets/images/rad_blue_off.png" id="btnBlue" width="32" height="32" alt="BLUE"/></li>
@@ -118,11 +119,16 @@
 <div id="step5" class="text container">
     <!-- Text placement on filtered image -->
     <div class="box">
+        <ul class="nav_icons">
+            <li><img src="assets/images/icon_upload_off.png" width="28" height="28" alt="STEP ONE"/></li>
+            <li><img src="assets/images/icon_edit_on.png" width="31" height="27" alt="STEP TWO"/></li>
+            <li><img src="assets/images/icon_share_off.png" width="31" height="27" alt="STEP THREE"/></li>
+        </ul>
         <canvas id="txtCanvas" width="380" height="380"></canvas>
         <div class="next_prev_container">
-            <img src="assets/images/lbl_pos_txt.png" width="217" height="18"/>
+            <img class="lbl_pos_txt" src="assets/images/lbl_pos_txt.png" width="217" height="18"/>
             <button id="prevStepFour" class="previous"></button>
-            <button class="next"></button>
+            <button id="btnAddText" class="next"></button>
         </div>
     </div>
 </div>
@@ -130,7 +136,23 @@
 <div id="step6" class="share container">
     <!-- smoked share functionality -->
     <div class="box">
-        <h3>STEP 6</h3>
+        <ul class="nav_icons">
+            <li><img src="assets/images/icon_upload_off.png" width="28" height="28" alt="STEP ONE"/></li>
+            <li><img src="assets/images/icon_edit_off.png" width="31" height="27" alt="STEP TWO"/></li>
+            <li><img src="assets/images/icon_share_on.png" width="31" height="27" alt="STEP THREE"/></li>
+        </ul>
+        <img class="lbl_share" src="assets/images/lbl_share.png" width="274" height="50"/>
+
+        <div class="share_box">
+            <img src="" width="50" height="50"/>
+            <span>Enter a description</span>
+        </div>
+        <ul class="share_buttons">
+            <li><img src="assets/images/btn_twitter.png" width="41" height="42"/></li>
+            <li><img src="assets/images/btn_fb.png" width="41" height="42"/></li>
+            <li><img src="assets/images/btn_instagram.png" width="41" height="42"/></li>
+            <li><img src="assets/images/btn_google.png" width="41" height="42"/></li>
+        </ul>
         <button id="btnShare"></button>
     </div>
 </div>
@@ -138,7 +160,10 @@
 <div id="step7" class="final container">
     <!-- display final image that would be shared. -->
     <div class="box">
-        <h3>STEP 7</h3>
+        <div class="final_frame">
+            <img id="finalImage" src="" width="380" height="380" style=""/>
+            <img src="assets/images/gnc_logo_red.png" width="215" height="48" style="margin:24px 0 0 88px;"/>
+        </div>
     </div>
 </div>
 
