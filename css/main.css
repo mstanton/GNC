@@ -16,6 +16,8 @@ body {font-family:'DINRoundProBold', Arial, Helvetica, sans-serif; color:#000; b
 .hidden_input { visibility:hidden; }
 canvas { }
 
+button { cursor: pointer; }
+
 /* layout */
 .logo { width:170px; height:54px; background:url('../assets/images/gnc_logo.png') no-repeat; margin:0 auto 30px auto; }
 .container { width:100%; position:absolute; right:-9999px; display:none; }
@@ -30,7 +32,8 @@ canvas { }
 .next_prev_container .next { position:absolute; right:0; }
 
 #form { width:391px; position:absolute; top:180px; left:139px;  text-align:center; }
-
+#form input { font-weight:bold; font-family: Helvetica; }
+textarea { font-weight:bold; font-family: Helvetica; }
 
 #lblColorImage { margin:12px 0 0 0; }
 
@@ -43,7 +46,7 @@ canvas { }
 
 .color_tools_container { position:absolute; z-index:100; top:445px; left:200px; }
 #colorTools { list-style-type:none;  }
-#colorTools li { float:left; }
+#colorTools li { float:left; cursor: pointer; }
 
 
 .share_buttons { list-style-type: none; position:absolute; top:430px; left:100px;  z-index:200; }
@@ -53,7 +56,7 @@ canvas { }
 .box { background:url('../assets/images/bg_edit_container.png') no-repeat; position:relative; }
 .box.intro { background:url('../assets/images/bg_intro_container.png') no-repeat; }
 
-.share_box { width:392px; height:102px; position:absolute; top:289px; left:137px; background:url('../assets/images/bg_share_box.png') no-repeat; }
+.share_box { width:392px; height:102px; position:absolute; top:289px; left:137px; background:url('../assets/images/bg_share_box.png') no-repeat; padding:12px 0 0 10px; }
 
 /* buttons */
 .previous { width:86px; height:41px; background:url('../assets/images/btn_previous.png'); border:none; }

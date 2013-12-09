@@ -7,13 +7,13 @@
     <script src="lib/js/jquery-1.8.2.min.js"></script>
     
     <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">-->
-    <link rel="stylesheet" type="text/css" href="css/jquery.jcrop.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://192.168.1.10:8888/GNC/css/jquery.jcrop.min.css">
+    <link rel="stylesheet" type="text/css" href="http://192.168.1.10:8888/GNC/css/main.css">
 
     <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>-->
-    <script type="text/javascript" src="lib/js/jquery.jcrop.min.js"></script>
-    <script type="text/javascript" src="lib/js/canvas.txt.extension.js"></script>
-    <script type="text/javascript" src="lib/js/load.js"></script>
+    <script type="text/javascript" src="http://192.168.1.10:8888/GNC/lib/js/jquery.jcrop.min.js"></script>
+    <script type="text/javascript" src="http://192.168.1.10:8888/GNC/lib/js/canvas.txt.extension.js"></script>
+    <script type="text/javascript" src="http://192.168.1.10:8888/GNC/lib/js/load.js"></script>
 </head>
 <body>
 <div class="logo"><!--GNC--></div>
@@ -108,9 +108,9 @@
             <li><img src="assets/images/icon_share_off.png" width="31" height="27" alt="STEP THREE"/></li>
         </ul>
         <div id="form">
-            <input type="text" id="beatName" value="NAME" width="391" height="61"/>
+            <input type="text" id="beatName" placeholder="NAME" width="391" height="61"/>
             <img src="assets/images/lbl_beat_avg.png" width="391" height="61"/>
-            <textarea id="beatText">HOW?</textarea>
+            <textarea id="beatText" placeholder="HOW?"></textarea>
             <button id="btnEnterTxt" class="btn_enter_txt"></button>
         </div>
     </div>
@@ -144,8 +144,8 @@
         <img class="lbl_share" src="assets/images/lbl_share.png" width="274" height="50"/>
 
         <div class="share_box">
-            <img src="" width="50" height="50"/>
-            <span>Enter a description</span>
+            <img id="previewShare" src="" width="80" height="80" style="float:left; margin:0 10px 0 0;" />
+            <textarea style="float:left; border:0px; width:200px;" placeholder="ENTER SHARE MESSAGE"></textarea>
         </div>
         <ul class="share_buttons">
             <li><img src="assets/images/btn_twitter.png" width="41" height="42"/></li>
