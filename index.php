@@ -7,13 +7,13 @@
     <script src="lib/js/jquery-1.8.2.min.js"></script>
     
     <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">-->
-    <link rel="stylesheet" type="text/css" href="http://192.168.1.10:8888/GNC/css/jquery.jcrop.min.css">
-    <link rel="stylesheet" type="text/css" href="http://192.168.1.10:8888/GNC/css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/GNC/css/jquery.jcrop.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/GNC/css/main.css">
 
     <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>-->
-    <script type="text/javascript" src="http://192.168.1.10:8888/GNC/lib/js/jquery.jcrop.min.js"></script>
-    <script type="text/javascript" src="http://192.168.1.10:8888/GNC/lib/js/canvas.txt.extension.js"></script>
-    <script type="text/javascript" src="http://192.168.1.10:8888/GNC/lib/js/load.js"></script>
+    <script type="text/javascript" src="http://localhost:8888/GNC/lib/js/jquery.jcrop.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8888/GNC/lib/js/canvas.txt.extension.js"></script>
+    <script type="text/javascript" src="http://localhost:8888/GNC/lib/js/load.js"></script>
 </head>
 <body>
 <div class="logo"><!--GNC--></div>
